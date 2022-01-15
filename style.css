@@ -71,12 +71,24 @@ body {
 	flex-wrap: wrap;
 	background-color: #ffffff;
 }
+
 .topBanner .container .leftSide {
 	display: flex;
 	justify-content: start;
 	align-items: center;
 	height: 90vh;
-	flex: 1;
+	width: 700px;
+}
+
+.topBanner .container .rightSide {
+	height: 90vh;
+	width: 700px;
+	background-image: url('imgAll/cameraLr.png');
+	background-attachment: scroll;
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+	/* background-color: red; */
 }
 
 .topBanner .container .leftSide .allText {
@@ -87,6 +99,7 @@ body {
 	font-weight: 800;
 }
 .topBanner .container .leftSide .allText p {
+	margin-top: 16px;
 }
 .topBanner .container .leftSide .allText .buttonMain {
 	text-decoration: none;
@@ -137,19 +150,361 @@ body {
 	}
 }
 
-.topBanner .container .rightSide {
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
+/* banner part end */
 
-	height: 90vh;
-	flex: 1;
-	background-image: url('imgAll/cameraLr.png');
-	background-attachment: scroll;
-	background-position: center right;
-	background-repeat: no-repeat;
-	background-size: 500px 500px;
-	/* background-color: red; */
+/* all brands */
+.allBrands .container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 50px 150px;
+	padding: 20px;
+	border-top: 1px solid rgb(177, 177, 177);
+	border-bottom: 1px solid rgb(177, 177, 177);
+}
+.allBrands .container .brand {
+}
+/* all brands end */
+
+/* populer product */
+.populerCollection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	font-size: 46px;
+}
+.populerCollection .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 26px;
+	font-weight: 600px;
+	position: relative;
 }
 
-/* banner part end */
+.populerCollection .container .product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 500px;
+	width: 300px;
+	border-radius: 12px;
+	/* border: 14px solid red; */
+	background-color: rgb(238, 238, 238);
+	position: relative;
+	padding: 8px;
+	margin: 15px;
+	box-shadow: 0 0 10px rgb(196, 196, 196);
+	font-size: 16px;
+}
+.populerCollection .container .product:hover {
+	background-color: rgb(255, 255, 255);
+}
+.populerCollection .container .product img {
+	position: absolute;
+	top: 10px;
+	width: 92%;
+	transition: all 1s ease;
+}
+
+.populerCollection .container .product .name {
+	text-align: start;
+	font-size: 27px;
+	font-weight: 500;
+	position: absolute;
+	bottom: 200px;
+	width: 92%;
+}
+.populerCollection .container .product .price {
+	text-align: start;
+	font-size: 20px;
+	font-weight: 400;
+	position: absolute;
+	bottom: 170px;
+	width: 92%;
+}
+.populerCollection .container .product .star {
+	text-align: start;
+	position: absolute;
+	bottom: 140px;
+	width: 92%;
+	display: flex;
+}
+.populerCollection .container .product .star i {
+	color: coral;
+	font-size: 14px;
+}
+.populerCollection .container .product .star .rating {
+	margin-left: 8px;
+	font-size: 14px;
+}
+.populerCollection .container .product p {
+	text-align: start;
+	position: absolute;
+	bottom: 70px;
+	width: 92%;
+}
+
+.populerCollection .container .bottomSeeMore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 65px;
+}
+
+.populerCollection .container .bottomSeeMore span {
+	font-size: 16px;
+	margin-right: 5px;
+}
+.populerCollection .container .bottomSeeMore i {
+	font-size: 16px;
+}
+/* populer product End */
+
+/* team member start*/
+.LatestArticles .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.LatestArticles .container .headline {
+	font-size: 46px;
+	animation-name: buttonMain_animation;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.LatestArticles .container .allArtical {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	margin-top: 60px;
+}
+
+.LatestArticles .container .allArtical .Articles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: rgb(43, 42, 42);
+	/* background-color: #e8e8eb; */
+	margin: 10px;
+	padding: 20px;
+	height: 400px;
+	width: 300px;
+	border: 4px solid rgba(238, 152, 24, 0.952);
+	border-radius: 12px;
+
+	position: relative;
+	transition: all 1s ease;
+}
+
+.LatestArticles .container .allArtical .Articles:hover {
+	background-color: #eeeeee;
+	color: rgb(10, 10, 10);
+}
+
+.LatestArticles .container .allArtical .Articles img {
+	width: 200px;
+	transition: all 1s ease;
+}
+
+.LatestArticles .container .allArtical .Articles img:hover {
+	transform: scale(1.1);
+}
+
+.LatestArticles .container .allArtical .Articles span {
+	background-color: darkorange;
+	color: white;
+	padding: 10px;
+	margin-top: 15px;
+	text-align: center;
+	border-radius: 12px;
+
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	top: -20px;
+	margin: auto;
+	height: 50px;
+}
+.LatestArticles .container .allArtical .Articles p {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* team member end */
+
+/* footer start */
+.footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	height: 250px;
+	background-color: rgb(27, 27, 27);
+	margin-top: 50px;
+}
+.footer .container .textAll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+
+.footer .container .textAll .bigText {
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.footer .container .textAll .middleText {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.footer .container .textAll .lastText {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.footer .container .iconAll {
+	display: flex;
+	color: white;
+}
+.footer .container .iconAll i {
+	background-color: rgb(73, 75, 73);
+	margin: 5px;
+	padding: 8px;
+	border-radius: 50%;
+}
+
+/* footer start End */
+
+/* media query start from here */
+@media (max-width: 991px) {
+	.topNavbar .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 40vh;
+		margin-top: 12px;
+	}
+	.topNavbar .container .rightSide .allLink a {
+		font-size: 12px;
+	}
+
+	.topBanner .container .leftSide {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		height: 50vh;
+		width: 700px;
+	}
+
+	.topBanner .container .rightSide {
+		height: 50vh;
+		width: 700px;
+		background-image: url('imgAll/cameraLr.png');
+		background-attachment: scroll;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 350px 350px;
+		/* background-color: red; */
+	}
+}
+*/ .allBrands .container {
+	margin: 10px 60px;
+	padding: 10px;
+	/* flex-direction: column; */
+}
+.allBrands .container .brand {
+	padding: 5px;
+}
+
+@media (max-width: 767px) {
+	.topNavbar .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 40vh;
+		margin-top: 12px;
+	}
+	.topNavbar .container .rightSide .allLink a {
+		font-size: 12px;
+	}
+
+	.topBanner .container .leftSide {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		height: 50vh;
+		width: 700px;
+	}
+
+	.topBanner .container .rightSide {
+		height: 50vh;
+		width: 700px;
+		background-image: url('imgAll/cameraLr.png');
+		background-attachment: scroll;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 350px 350px;
+		/* background-color: red; */
+	}
+	.allBrands .container {
+		display: none;
+	}
+}
+
+@media (max-width: 575px) {
+	.topNavbar .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 40vh;
+	}
+	.topNavbar .container .rightSide .allLink a {
+		font-size: 10px;
+	}
+
+	.allBrands .container {
+		display: none;
+	}
+
+	.topBanner .container .leftSide {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		height: 50vh;
+		width: 700px;
+	}
+
+	.topBanner .container .rightSide {
+		height: 50vh;
+		width: 700px;
+		background-image: url('imgAll/cameraLr.png');
+		background-attachment: scroll;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 300px 300px;
+		/* background-color: red; */
+	}
+}
